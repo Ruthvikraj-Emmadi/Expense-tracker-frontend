@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = axios.create({ baseURL: 'http://localhost:8080/api' })
+const API = axios.create({ baseURL: 'https://expense-tracker-backend-j2ei.onrender.com/api' })
 
 export const getAllExpenses    = ()           => API.get('/expenses')
 export const getExpenseById   = (id)         => API.get(`/expenses/${id}`)
